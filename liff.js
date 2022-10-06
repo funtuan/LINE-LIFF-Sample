@@ -4,6 +4,8 @@ window.onload = function (e) {
     liff.init({ liffId: '1657535491-3bjwjAa9'}, function (data) {
         getProfile();
         initializeApp(data);
+    }, function (err) {
+        alert('liff init error: ' + err)
     });
 
     // LIFF アプリを閉じる
