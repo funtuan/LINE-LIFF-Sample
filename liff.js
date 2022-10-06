@@ -1,7 +1,7 @@
 window.onload = function (e) {
     // init で初期化。基本情報を取得。
     // https://developers.line.me/ja/reference/liff/#initialize-liff-app
-    liff.init(function (data) {
+    liff.init({ liffId: '1657535491-3bjwjAa9'}, function (data) {
         getProfile();
         initializeApp(data);
     });
